@@ -7,14 +7,15 @@ Introduction
     :target: https://github.com/psf/black
     :alt: Code Style: Black
 
-CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD
-
+CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD.
+This driver supports the `adafruit_framebuf interface <https://circuitpython.readthedocs.io/projects/framebuf/en/latest/>`__ via composition instead of inheritance.
 
 Dependencies
 =============
 This driver depends on:
 
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
+* `Adafruit framebuf <https://github.com/adafruit/Adafruit_CircuitPython_framebuf>`_
 
 Please ensure all dependencies are available on the CircuitPython filesystem.
 This is easily achieved by downloading
