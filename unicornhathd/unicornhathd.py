@@ -23,7 +23,7 @@ Implementation Notes
 * Adafruit CircuitPython firmware for the supported boards:
   https://github.com/adafruit/circuitpython/releases
 
-# * Adafruit's framebuf library: https://github.com/adafruit/Adafruit_CircuitPython_framebuf
+* Adafruit's framebuf library: https://github.com/adafruit/Adafruit_CircuitPython_framebuf
 """
 
 # imports__version__ = "0.0.0-auto.0"
@@ -78,38 +78,49 @@ class UnicornHATHD:
         self._frame_buffer.rotation = val
 
     def fill(self, color: int) -> None:
+        """Fill the entire display with the specified color."""
         self._frame_buffer.fill(color)
 
     def fill_rect(self, x: int, y: int, width: int, height: int, color: int) -> None:
+        """Draw a rectangle at the given location, size and color. It draws both the outline and interior."""
         self._frame_buffer.fill_rect(x, y, width, height, color)
 
     def pixel(self, x, y, color=None) -> None:
+        """Set the specified pixel to the given color."""
         self._frame_buffer.pixel(x, y, color)
 
     def hline(self, x: int, y: int, width: int, color: int) -> None:
+        """Draw a horizontal line up to a given length."""
         self._frame_buffer.hline(x, y, width, color)
 
     def vline(self, x: int, y: int, height: int, color: int) -> None:
+        """Draw a vertical line up to a given length."""
         self._frame_buffer.vline(x, y, height, color)
 
     def line(self, x_0: int, y_0: int, x_1: int, y_1: int, color: int) -> None:
+        """Bresenham's line algorithm"""
         self._frame_buffer.line(x_0, y_0, x_1, y_1, color)
 
     def circle(self, center_x: int, center_y: int, radius: int, color: int) -> None:
+        """Draw a circle at the given midpoint location, radius and color. It draws a 1 pixel outline."""
         self._frame_buffer.circle(center_x, center_y, radius, color)
 
     def rect(
         self, x: int, y: int, width: int, height: int, color: int, *, fill: bool = False
     ) -> None:
+        """Draw a rectangle at the given location, size and color. It draws a 1 pixel outline."""
         self._frame_buffer.rect(x, y, width, height, color, fill=fill)
 
     def text(self, string, x, y, color, *, font_name="font5x8.bin", size=1) -> None:
+        """Place text on the screen in variables sizes. Breaks on \n to next line. Does not break on line going off screen."""
         self._frame_buffer.text(string, x, y, color, font_name=font_name, size=size)
 
     def image(self, img) -> None:
+        """Set buffer to value of Python Imaging Library image. The image should be in 1 bit mode and a size equal to the display size."""
         self._frame_buffer.image(img)
 
     def scroll(self, delta_x: int, delta_y: int) -> None:
+        """Shifts display in x and y direction"""
         self._frame_buffer.scroll(delta_x, delta_y)
 
     def show(self) -> None:
