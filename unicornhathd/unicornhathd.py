@@ -85,7 +85,7 @@ class UnicornHATHD:
         """Draw a rectangle at the given location, size and color. It draws both the outline and interior."""
         self._frame_buffer.fill_rect(x, y, width, height, color)
 
-    def pixel(self, x, y, color=None) -> None:
+    def pixel(self, x: int, y: int, color: int = None) -> None:
         """Set the specified pixel to the given color."""
         self._frame_buffer.pixel(x, y, color)
 
@@ -111,7 +111,16 @@ class UnicornHATHD:
         """Draw a rectangle at the given location, size and color. It draws a 1 pixel outline."""
         self._frame_buffer.rect(x, y, width, height, color, fill=fill)
 
-    def text(self, string, x, y, color, *, font_name="font5x8.bin", size=1) -> None:
+    def text(
+        self,
+        string: str,
+        x: int,
+        y: int,
+        color: int,
+        *,
+        font_name: str = "font5x8.bin",
+        size: int = 1,
+    ) -> None:
         """Place text on the screen in variables sizes. Breaks on \n to next line. Does not break on line going off screen."""
         self._frame_buffer.text(string, x, y, color, font_name=font_name, size=size)
 
