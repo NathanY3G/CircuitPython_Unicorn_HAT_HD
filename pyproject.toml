@@ -1,9 +1,11 @@
 [tool.poetry]
-name = "circuitpython_unicornhathd"
-version = "0.6.0"
+name = "circuitpython-unicornhathd"
+version = "0.6.1"
 description = "CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD"
 authors = ["Nathan Young"]
 license = "MIT"
+repository = "https://github.com/NathanY3G/CircuitPython_Unicorn_HAT_HD"
+readme = "README.rst"
 packages = [
     { include = "unicornhathd" }
 ]
