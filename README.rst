@@ -6,7 +6,7 @@ Introduction
     :alt: Code Style: Black
 
 .. image:: https://img.shields.io/pypi/v/circuitpython-unicornhathd?color=informational
-     :target: https://pypi.org/project/circuitpython-unicornhathd)
+     :target: https://pypi.org/project/circuitpython-unicornhathd
      :alt: PyPI
 
 
