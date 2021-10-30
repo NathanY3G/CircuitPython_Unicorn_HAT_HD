@@ -5,6 +5,11 @@ Introduction
     :target: https://github.com/psf/black
     :alt: Code Style: Black
 
+.. image:: https://img.shields.io/pypi/v/circuitpython-unicornhathd?color=informational
+     :target: https://pypi.org/project/circuitpython-unicornhathd
+     :alt: PyPI
+
+
 CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD.
 This driver supports the `adafruit_framebuf interface <https://circuitpython.readthedocs.io/projects/framebuf/en/latest/>`__ via composition instead of inheritance.
 
@@ -29,9 +34,6 @@ or individual libraries can be installed using
 
 Installing from PyPI
 =====================
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
-
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
 PyPI <https://pypi.org/project/circuitpython-unicornhathd/>`_.
 To install for current user:
