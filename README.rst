@@ -5,6 +5,11 @@ Introduction
     :target: https://github.com/psf/black
     :alt: Code Style: Black
 
+.. image:: https://img.shields.io/pypi/v/circuitpython-unicornhathd?color=informational
+     :target: https://pypi.org/project/circuitpython-unicornhathd)
+     :alt: PyPI
+
+
 CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD.
 This driver supports the `adafruit_framebuf interface <https://circuitpython.readthedocs.io/projects/framebuf/en/latest/>`__ via composition instead of inheritance.
 
