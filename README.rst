@@ -9,7 +9,6 @@ CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD.
 This driver supports the `adafruit_framebuf interface <https://circuitpython.readthedocs.io/projects/framebuf/en/latest/>`__ via composition instead of inheritance.
 
 .. image:: ./images/unicornhathd_rainbow.png
-   :target: https://github.com/NathanY3G/CircuitPython_Unicorn_HAT_HD/blob/main/images/unicornhathd_rainbow.png
    :alt: Pimoroni Unicorn HAT HD on breadboard
    :scale: 50%
    :align: center
