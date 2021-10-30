@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "circuitpython_unicornhathd"
-version = "0.5.1"
+version = "0.5.2"
 description = "CircuitPython framebuf based driver for Pimoroni's Unicorn HAT HD"
 authors = ["Nathan Young"]
 license = "MIT"

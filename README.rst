@@ -1,8 +1,6 @@
 Introduction
 ============
 
-
-
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://github.com/psf/black
     :alt: Code Style: Black
@@ -79,8 +77,22 @@ Or the following command to update an existing version:
 Usage Example
 =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the
-examples folder and be included in docs/examples.rst.
+.. code-block:: python
+
+  import board
+  import digitalio
+  from unicornhathd import UnicornHATHD
+
+  # TODO: Change this pin to match your wiring
+  chip_select_pin = digitalio.DigitalInOut(board.D0)
+  chip_select_pin.direction = digitalio.Direction.OUTPUT
+  chip_select_pin.value = True
+
+  display = UnicornHATHD(board.SPI(), chip_select_pin)
+
+  # Turn on all of the blue LEDs
+  display.fill(127)
+  display.show()
 
 Contributing
 ============
